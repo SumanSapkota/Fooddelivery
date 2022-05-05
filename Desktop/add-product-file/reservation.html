@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+    button:hover {
+      color: red;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      height: 56px;
+    }
+
+    input[type="date"] {
+      height: 45px;
+      width: 145px;
+    }
+
+    input[type="number"] {
+      height: 44px;
+      width: 153px;
+    }
+
+    input[type="time"] {
+      height: 53px;
+      width: 153px;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+      font-size: 24px;
+    }
+
+    input[type="submit"] {
+      background-color: red;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 25%;
+      margin-top: 56px;
+      margin-left: 412px;
+      border-radius: 23px;
+      height: 51px;
+      font-size: 20px;
+      width: 35%;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      padding: 20px;
+      height: 512px;
+    }
+
+    .container h3 {
+      FOnt-size: 25px;
+      text-align: center;
+    }
+
+    .row {
+      margin-left: 176px;
+    }
+
+    #venue {
+      width: 40%;
+    }
+
+    @media screen and (max-width: 850px) {
+      input[type="submit"] {
+        margin-top: 34px;
+        margin-left: 261px;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      input[type="submit"] {
+        margin-top: 34px;
+        margin-left: 150spx;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Book Your Table</h3>
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="Venue">Venue</label><br>
+        </div>
+        <div class="col-75" id="venue">
+          <select id="Venue" name="Venue" required>
+            <option value="3D Cottage">3D Cottage</option>
+            <option value="KhongKhong">KhongKhong</option>
+            <option value="Sarina">Sarina</option>
+          </select><br>
+        </div>
+      </div>
+      <div class="row" id="date">
+        <div class="col-25">
+          <label for="date">Date</label>
+        </div>
+        <div class="col-75 form-control">
+          <input type="date" id="date" name="date" required>
+        </div>
+      </div>
+      <div class="row" id="time">
+        <div class="col-25">
+          <label for="time">Time</label>
+        </div>
+        <div class="col-75">
+          <input type="time" id="time" name="time" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="numer">People</label>
+        </div>
+        <div class="col-75 ">
+          <input type="number" id="number" name="number" required>
+        </div>
+      </div>
+      <input type="submit" value="BOOK NOW">
+    </form>
+  </div>
+  </script>
+</body>
+
+</html>

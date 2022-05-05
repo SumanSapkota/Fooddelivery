@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+   
+
+    html {
+      box-sizing: border-box;
+    }
+
+    .card {
+      background-color: #e6dcdc;
+    }
+
+
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 32.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .card img {
+      width: 49%;
+      margin-left: 108px;
+      height: 270px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+      margin: 4px;
+    }
+
+    .container h2 {
+      margin-left: 136px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .container-fot {
+      max-width: 1170px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+
+    /* Set a style for all buttons */
+    button {
+      background-color: rgb(43, 40, 43);
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 21px;
+      text-transform: uppercase;
+    }
+
+    button:hover {
+      color: red;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 5px;
+      right: 59px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div>
+
+  <h2 style="text-align: center;margin-top: 55px;margin-bottom: 22px;">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="image/suman.jpg" alt="Jane">
+        <div class="container">
+          <h2>SUMAN SAPKOTA</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>adroeeen200@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="image/rojina.jpg" alt="rojinakandel">
+        <div class="container">
+          <h2>ROJINA KANDEL</h2>
+          <p class="title">Marketing Head</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>rojinakandel@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="image/arman.jpeg" alt="Arman Miya">
+        <div class="container">
+          <h2>Arman Miya</h2>
+          <p class="title">Co-founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>armanmiya@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="google-map">
+      <h2 style=" text-align: center; margin: 60px; margin-top: 60px; margin-top: 80px;">Find us on Google-map</h2>
+      <h2 style="margin-left:267px;">DESCRIPTION</h2>
+      <p style="height: 47px;width: 890px;margin-left: 42px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Totam deleniti
+        velit molestiae numquam laborum, facere
+        labore aliquam, corporis quibusdam dignissimos delectus quia, quae ratione? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Recusandae dolore cum eos repudiandae? Harum voluptates ipsa temporibus fuga
+        officia, quod corporis inventore, nihil saepe perferendis vero! At veritatis odit ipsum.</p>
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=kawasoti-1&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com"></a><br>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 500px;
+              width: 606px;
+              margin-left: 1119px;
+              float: right;
+              top: -64px;
+            }
+          </style><a href="https://www.embedgooglemap.net">map widget for website</a>
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 500px;
+              width: 600px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
